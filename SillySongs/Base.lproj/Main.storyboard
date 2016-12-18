@@ -22,22 +22,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5tV-5f-EtH">
-                                <rect key="frame" x="16" y="371" width="343" height="138"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Nate, Nate, Bo Bate
-Banana Fana Fo Fate
-Me My Mo Mate
-Nate</string>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Dxe-sT-lQK">
                                 <rect key="frame" x="16" y="241" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="light" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="YqA-BG-eXj"/>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="tIP-UU-AQh"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silly Songs!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSe-wZ-eaE">
                                 <rect key="frame" x="16" y="58" width="343" height="175"/>
@@ -49,19 +42,35 @@ Nate</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUo-mK-Vqu">
+                                <rect key="frame" x="16" y="323" width="343" height="169"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Nate, Nate, Bo Bate
+Banana Fana Fo Fate
+Me My Mo Mate
+Nate</string>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay-Regular" family=".SF NS Display" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.75294117647058822" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="5tV-5f-EtH" firstAttribute="centerX" secondItem="Dxe-sT-lQK" secondAttribute="centerX" id="EyG-yo-uxW"/>
                             <constraint firstItem="Dxe-sT-lQK" firstAttribute="top" secondItem="OSe-wZ-eaE" secondAttribute="bottom" constant="8" id="Gn5-tb-Y6a"/>
-                            <constraint firstItem="5tV-5f-EtH" firstAttribute="top" secondItem="Dxe-sT-lQK" secondAttribute="bottom" constant="100" id="dqT-Ef-BwL"/>
+                            <constraint firstItem="OUo-mK-Vqu" firstAttribute="centerX" secondItem="Dxe-sT-lQK" secondAttribute="centerX" id="HWD-Qc-KRM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dxe-sT-lQK" secondAttribute="trailing" id="iGd-Rd-6iL"/>
                             <constraint firstItem="Dxe-sT-lQK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jsM-bI-l1u"/>
                             <constraint firstItem="OSe-wZ-eaE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oLK-gQ-9Zr"/>
+                            <constraint firstItem="OUo-mK-Vqu" firstAttribute="top" secondItem="Dxe-sT-lQK" secondAttribute="bottom" constant="52" id="pw5-RX-7qP"/>
                             <constraint firstItem="OSe-wZ-eaE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="tVu-no-CRK"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Dxe-sT-lQK" secondAttribute="leading" id="uis-26-eez"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelLyrics" destination="OUo-mK-Vqu" id="gi7-Aa-lyl"/>
+                        <outlet property="nameField" destination="Dxe-sT-lQK" id="5xW-S5-TJ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF3B35A51E063CC80037FF1B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3B35A41E063CC80037FF1B /* Song.swift */; };
+		DF3B35A91E063D1A0037FF1B /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3B35A81E063D1A0037FF1B /* Name.swift */; };
+		DF3B35AE1E064B550037FF1B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3B35AD1E064B550037FF1B /* String.swift */; };
+		DF3B35B01E064B780037FF1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3B35AF1E064B780037FF1B /* ViewController.swift */; };
 		DF54A1D41E059FDD007D8916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54A1D31E059FDD007D8916 /* AppDelegate.swift */; };
 		DF54A1D61E059FDD007D8916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54A1D51E059FDD007D8916 /* ViewController.swift */; };
 		DF54A1D91E059FDD007D8916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF54A1D71E059FDD007D8916 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF3B35A41E063CC80037FF1B /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Song\U001b\U001b\U001b\U001b\U001b.swift"; sourceTree = "<group>"; };
+		DF3B35A81E063D1A0037FF1B /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		DF3B35AD1E064B550037FF1B /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		DF3B35AF1E064B780037FF1B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF54A1D01E059FDD007D8916 /* SillySongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SillySongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF54A1D31E059FDD007D8916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF54A1D51E059FDD007D8916 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController\U001b.swift"; sourceTree = "<group>"; };
@@ -74,6 +82,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF3B35A31E063C410037FF1B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DF3B35A41E063CC80037FF1B /* Song.swift */,
+				DF3B35A81E063D1A0037FF1B /* Name.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		DF3B35AA1E064AD10037FF1B /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DF3B35AD1E064B550037FF1B /* String.swift */,
+				DF3B35AF1E064B780037FF1B /* ViewController.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
 		DF54A1C71E059FDD007D8916 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +123,8 @@
 		DF54A1D21E059FDD007D8916 /* SillySongs */ = {
 			isa = PBXGroup;
 			children = (
+				DF3B35AA1E064AD10037FF1B /* extensions */,
+				DF3B35A31E063C410037FF1B /* model */,
 				DF54A1D31E059FDD007D8916 /* AppDelegate.swift */,
 				DF54A1D51E059FDD007D8916 /* ViewController.swift */,
 				DF54A1D71E059FDD007D8916 /* Main.storyboard */,
@@ -259,8 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF3B35B01E064B780037FF1B /* ViewController.swift in Sources */,
+				DF3B35A51E063CC80037FF1B /* Song.swift in Sources */,
 				DF54A1D61E059FDD007D8916 /* ViewController.swift in Sources */,
+				DF3B35AE1E064B550037FF1B /* String.swift in Sources */,
 				DF54A1D41E059FDD007D8916 /* AppDelegate.swift in Sources */,
+				DF3B35A91E063D1A0037FF1B /* Name.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
